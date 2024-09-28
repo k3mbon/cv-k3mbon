@@ -1,0 +1,327 @@
+/* General Home container styling */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+/* Card container for side-by-side layout */
+.card-container {
+    display: flex; /* Use flexbox to arrange sections side by side */
+    justify-items: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Card styling */
+.card {
+    background-color: #1d1c1a; /* Dark background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit the card width */
+    flex: 1 1 450px; /* Allow cards to grow, shrink, and have a base width */
+    margin: 5px; /* Space around each card */
+}
+
+/* Card section to control layout of Profile, Experience, and Contact */
+.card-section {
+    flex: 1; /* Allow sections to grow equally */
+    flex-direction: column; /* Stack cards vertically within each section */
+    min-height: 450px; /* Minimum height for each section */
+}
+
+/* Profile row with image and text */
+.profile-row {
+    display: flex;
+    align-items: center;
+}
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #cccccc; /* Placeholder for image */
+    margin-right: 20px;
+}
+
+/* Uncomment if you're using an image */
+.circle-image img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Name and Job Title styling */
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.profile-name {
+    margin: 0;
+    color: azure; /* Use a contrasting color */
+}
+
+.profile-job {
+    margin: 0;
+    color: #FF893A; /* Highlight job title */
+}
+
+/* Introduction text styling */
+.introduction {
+    margin-top: 20px;
+    text-align: left; /* Justify text */
+}
+
+.introduction p {
+    color: azure; /* Text color for introduction */
+    line-height: 1.5; /* Improve readability */
+    text-align: center; /* Center text in introduction */
+}
+
+/* Experience card styling */
+.experience-card {
+    position: relative;
+    color: azure; /* Text color for the experience card */
+}
+
+.experience-title {
+    text-align: left; /* Align title to the left */
+    font-size: 24px; /* Increase title font size */
+    font-weight: bold; /* Make title bold */
+}
+
+/* Job Year Card Styling for Present */
+.job-year-card {
+    background-color: rgba(237, 171, 46, 0.6); /* Card color with 60% opacity */
+    color: #EDAB2E; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the card */
+    margin-right: 20px; /* Space between the year card and job details */
+    display: inline-block; /* To fit the content */
+    font-weight: bold; /* Bold text */
+}
+
+/* Job history entry styling */
+.job-history-entry {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly between items */
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Styling for the year section */
+.job-year {
+    flex: 0 0 100px; /* Fixed width for year */
+    font-weight: bold; /* Bold font for year */
+    text-align: right; /* Align text to the right for better readability */
+}
+
+/* Styling for the job details section */
+.job-details {
+    flex-grow: 1; /* Allow this section to take remaining space */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add some padding to separate from year */
+}
+
+/* Place styling */
+.job-place {
+    font-weight: bold; /* Bold for job place */
+}
+
+/* Position styling */
+.job-position {
+    font-style: italic; /* Italics for job position */
+    margin: 5px 0; /* Margin for spacing */
+}
+
+/* Job description styling */
+.job-description {
+    text-align: left; /* Justify job description text */
+    
+}
+
+/* Job duration container styling */
+.job-duration-container {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center align the items vertically */
+}
+
+/* Job duration styling */
+.job-duration {
+    background-color: #E55F4F; /* Background for job duration */
+    color: #FF893A; /* Text color for job duration */
+    display: inline-block; /* Keep duration text inline */
+    padding: 5px 10px; /* Padding for duration card */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    margin-right: 10px; /* Space between duration text and card */
+}
+
+/* New Duration Card */
+.duration-card {
+    background-color: #E55F4F; /* Same as the duration background */
+    color: #FF893A; /* Text color */
+    padding: 5px 10px; /* Padding for card */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-weight: bold; /* Bold text */
+}
+
+/* Contact title */
+.contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left; /* Align title to the left */
+    margin: 0;
+    color: azure; /* Title color */
+}
+
+/* Contact list styling */
+.contact-list {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+}
+
+.contact-list li {
+    margin: 10px 0; /* Space between items */
+    color: azure; /* Text color for contact items */
+}
+
+.contact-link {
+    color: #EDAB2E; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #FF893A;
+}
+
+.social-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.arrow {
+    color: #EDAB2E; /* Arrow color */
+}
+
+
+/* Carousel Title */
+.carousel-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px; /* Set carousel title to 24px */
+    color: azure; /* Same color theme */
+    margin-top: 0;
+}
+
+/* Grid for Work Highlight Items */
+.work-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)); /* Responsive grid with max 2 columns */
+    gap: 5px; /* Space between items */
+}
+
+/* Individual Work Highlight Item */
+.work-highlight-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Work Highlight Image */
+.work-highlight-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Work Highlight Title */
+.work-highlight-title {
+    text-align: center;
+    font-size: 12px; /* Set highlight title to 12px */
+    color: #FF893A; /* Match title color with the theme */
+}
+
+/* Hover Effect */
+.work-highlight-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.work-highlight-item:hover .work-highlight-image {
+    transform: scale(1.1); /* Slight zoom on the image */
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .work-highlight-image {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    .work-highlight-title {
+        font-size: 12px; /* Ensure title stays at 12px even on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .work-highlight-image {
+        height: 130px; /* Smaller height for mobile */
+    }
+
+    .work-highlight-title {
+        font-size: 12px; /* Keep title small for mobile */
+    }
+}
+
+/* Education title */
+.education-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left; /* Align title to the left */
+    color: azure; /* Title color */
+    margin: 0;
+}
+
+/* Education entry styling */
+.education-entry {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between year and details */
+    align-items: center; /* Align items vertically */
+}
+
+/* Education year styling */
+.education-year {
+    font-weight: bold; /* Make the year bold */
+    color: #EDAB2E; /* Color for the year */
+    width: 100px; /* Fixed width for the year */
+}
+
+/* Education details */
+.education-details {
+    flex-grow: 1; /* Allow details to take remaining space */
+}
+
+/* University name styling */
+.education-university {
+    font-weight: bold; /* Make the university name bold */
+    color: azure; /* Color for the university name */
+    text-align: left;
+}
+
+/* Degree styling */
+.education-degree {
+    color: #FFFF; /* Slightly different color for the degree */
+    text-align: left;
+}
+
